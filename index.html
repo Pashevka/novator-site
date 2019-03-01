@@ -1,14 +1,203 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>NovatorSite</title>
-  <base href="/">
+<!DOCTYPE html>
+<html lang="ru">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" href="styles.4764c01a18e74ba28641.css"></head>
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
+
+	<script src="js/scripts.min.js"></script>
+</head>
+
 <body>
-  <app-root></app-root>
-<script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.7037a817a5bb670ed2ca.js"></script><script type="text/javascript" src="main.28b9e5fc6804c56119e9.js"></script></body>
+	<header>
+		<div class="header">
+			<div class="header__logo">
+				<img src="img/LOGO.svg" alt="Logo">
+			</div>
+			<div class="header__list">
+				<ul>
+					<li class="selected" id="id_1"><a href="index.html">services</a></li>
+					<li id="id_2"><a href="pricing.html">pricing</a></li>
+					<li id="id_3"><a href="portfolio.html">portfolio</a></li>
+					<li id="id_4"><a href="how-we-work.html">how we work</a></li>
+					<li id="id_5"><a href="team.html">portteamfolio</a></li>
+					<li id="id_6"><a href="tech.html">tech</a></li>
+					<li id="id_7"><a href="contact.html">contact us</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</header>
+	<section class="services">
+		<div class="container-fluid">
+			<div class="row services__big__text">
+				<h1 class="cd-headline letters services__big__text rotate-2">
+					<span class="yellow">We are experts in</span>
+					<span class="cd-words-wrapper">
+						<b class="is-visible">tech &nbsp; consulting</b>
+						<b>marketing</b>
+						<b>making &nbsp; pizza</b>
+					</span>
+				</h1>
+			</div>
+			<div class="row services__items">
+				<div class="col-6">
+					<div class="services__item">
+
+						<div class="services__item__info">
+							<div class="services__item__info__header">
+								<img src="img/Software development.svg" alt="Scale" class="services__item__logo">
+								<div class="services__item__info__header__name">
+									Software development
+								</div>
+							</div>
+							<div class="services__item__info__list">
+								<ul>
+									<li>Backend</li>
+									<li>Web</li>
+									<li>Mobile</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="services__item">
+
+						<div class="services__item__info">
+							<div class="services__item__info__header">
+								<img src="img/DevOps.svg" alt="DevOps" class="services__item__logo">
+								<div class="services__item__info__header__name">
+									DevOps</div>
+							</div>
+							<div class="services__item__info__list">
+								<ul>
+									<li>Maintenance automation</li>
+									<li>Deployment and administration</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="services__item">
+
+						<div class="services__item__info">
+							<div class="services__item__info__header">
+								<img src="img/Tech consulting.svg" alt="Tech" class="services__item__logo">
+								<div class="services__item__info__header__name">
+									Tech consulting</div>
+							</div>
+							<div class="services__item__info__list">
+								<ul>
+									<li>Training</li>
+									<li>Technical due diligence</li>
+									<li>Architecture design/review</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="services__item">
+
+						<div class="services__item__info">
+							<div class="services__item__info__header">
+								<img src="img/Scale.svg" alt="Scale" class="services__item__logo">
+								<div class="services__item__info__header__name">
+									Scale</div>
+							</div>
+							<div class="services__item__info__list">
+								<ul>
+									<li>
+										<div class="list__item__header">High­load</div>
+										<div class="list__item__content">Up to 10k requests/second with single server</div>
+									</li>
+									<li>
+										<div class="list__item__header">BigData</div>
+										<div class="list__item__content">Databases 10+Tb size</div>
+									</li>
+									<li>
+										<div class="list__item__header">Clustering</div>
+										<div class="list__item__content">Deployments with 10­100 nodes</div>
+									</li>
+									<li>
+										<div class="list__item__header">Hot­redeploy</div>
+										<div class="list__item__content">Software releases without system downtime</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="services__item">
+
+						<div class="services__item__info">
+							<div class="services__item__info__header">
+								<img src="img/Quality.svg" alt="Quality" class="services__item__logo">
+								<div class="services__item__info__header__name">
+									Quality</div>
+							</div>
+							<div class="services__item__info__list">
+								<ul>
+									<li>
+										<div class="list__item__header">Fault­tolerance</div>
+										<div class="list__item__content">Server failures don't affect user experience</div>
+									</li>
+									<li>
+										<div class="list__item__header">Automated testing</div>
+										<div class="list__item__content">No regression bugs even after major changes</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer">
+			<div class="footer__left">
+				Ⓒ 2018 Novator | All rights reserved
+			</div>
+			<div class="footer__right">
+				<img src="img/letter.svg" alt="letter">
+			</div>
+		</div>
+
+	</footer>
+
+
+
+
+
+</body>
+
 </html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" gegrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src='js/lazy-line-painter-1.9.6.min.js'></script>
+    <script type="text/javascript">
+        (function () {
+
+            document.onreadystatechange = () => {
+
+                if (document.readyState === 'complete') {
+
+                    /**
+                     * Setup your Lazy Line element.
+                     * see README file for more settings
+                     */
+
+                    let el = document.querySelector('#customSVG');
+                    console.log(el);
+                    
+                    let myAnimation = new LazyLinePainter(el, {
+                        "ease": "easeLinear",
+                        "strokeWidth": 0.5,
+                        "strokeOpacity": 1,
+                        "strokeColor": "#ff7300",
+                        "strokeCap": "round",
+                        "reverse": true
+                    });
+                    myAnimation.paint();
+                }
+            }
+
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header__logo">
+                <img src="img/LOGO.svg" alt="Logo">
+            </div>
+            <div class="header__list">
+                <ul>
+                    <li id="id_1"><a href="index.html">services</a></li>
+                    <li class="selected" id="id_2"><a href="pricing.html">pricing</a></li>
+                    <li id="id_3"><a href="portfolio.html">portfolio</a></li>
+                    <li id="id_4"><a href="how-we-work.html">how we work</a></li>
+                    <li id="id_5"><a href="team.html">portteamfolio</a></li>
+                    <li id="id_6"><a href="tech.html">tech</a></li>
+                    <li id="id_7"><a href="contact.html">contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <section class="pricing">
+        <div class="container-fluid m-0 p-0">
+            <div class="pricing__image">
+                <img src="img/pricing_main2.jpg" alt="">
+                <h1 class="pricing__image__header">Pricing</h1>
+            </div>
+            <div class="pricing__descr">
+                <div class="pricing__descr__header">Contract types</div>
+                <div class="pricing__descr__content">Мы используем два типа подхода к оценке стоимости проекта: либо
+                    считаем общую стоимость проекта, либо почасовую оплату.</div>
+            </div>
+            <div class="pricing__content">
+                <div class="pricing__icons">
+                    <div class="pricing__icons__item"><img src="img/Min project-  30 000$ .svg" alt="pricing">
+                        <span class=""> Min project:<br /> 30 000$</span>
+                    </div>
+                    <div class="pricing__icons__item">
+                        <img src="img/Hourly rate-  40­-70$.svg" alt="">
+                        <span class="">Hourly rate:<br /> 40­-70$</span>
+                    </div>
+                    <div class="pricing__icons__item">
+                        <img src="img/Advice, review,  consultation- free .svg" alt="">
+                        <span class="">Advice, review,<br /> consultation: free </span>
+                    </div>
+                    <div class="pricing__icons__item">
+                        <img src="img/Finding good business partner- priceless.svg" alt="">
+                        <span class="">Finding good business<br /> partner: priceless</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing__table">
+                <div class="table__header">
+                    <div class="item">Activity</div>
+                    <div class="item">Price range</div>
+                    <div class="item">Timeframe</div>
+                </div>
+                <div class="table__row">
+                    <div class="item">Estimate</div>
+                    <div class="item">Free</div>
+                    <div class="item">1-5 days</div>
+                </div>
+                <div class="table__row">
+                    <div class="item">Proof of concept</div>
+                    <div class="item">5k$</div>
+                    <div class="item">1-2 months</div>
+                </div>
+                <div class="table__row">
+                    <div class="item">MVP</div>
+                    <div class="item">15-30k$</div>
+                    <div class="item">2-5 months</div>
+                </div>
+                <div class="table__row">
+                    <div class="item">Commercial-grade system</div>
+                    <div class="item">
+                        50+k$</div>
+                    <div class="item">4-10 months</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer__left">
+                Ⓒ 2018 Novator | All rights reserved
+            </div>
+            <div class="footer__right">
+                <img src="img/letter.svg" alt="letter">
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" gegrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" gegrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" gegrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
